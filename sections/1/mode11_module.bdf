@@ -524,32 +524,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 616 -576 728 -528)
-	(text "lpm_constant0" (rect 5 0 105 16)(font "Arial" (font_size 10)))
-	(text "inst4" (rect 8 32 31 44)(font "Arial" ))
-	(port
-		(pt 112 24)
-		(output)
-		(text "result[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
-		(text "1" (rect 86 16 93 30)(font "Arial" (font_size 8)))
-		(line (pt 112 24)(pt 96 24))
-	)
-	(drawing
-		(line (pt 16 16)(pt 16 32))
-		(line (pt 16 16)(pt 96 16))
-		(line (pt 16 32)(pt 96 32))
-		(line (pt 96 16)(pt 96 32))
-		(line (pt 0 0)(pt 114 0))
-		(line (pt 114 0)(pt 114 50))
-		(line (pt 0 50)(pt 114 50))
-		(line (pt 0 0)(pt 0 50))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-	)
-)
-(symbol
 	(rect 808 -416 944 -320)
 	(text "5bitFA" (rect 5 0 41 14)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
@@ -583,6 +557,21 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
+	(rect 664 -568 696 -552)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
 	)
 )
 (connector
@@ -822,14 +811,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 768 -552)
-	(pt 768 -384)
-)
-(connector
-	(pt 768 -552)
-	(pt 728 -552)
-)
-(connector
 	(text "final[5..0]" (rect 970 -400 1017 -388)(font "Arial" ))
 	(pt 944 -384)
 	(pt 1024 -384)
@@ -873,6 +854,26 @@ applicable agreement for further details.
 	(pt 672 -256)
 	(pt 672 -248)
 	(bus)
+)
+(connector
+	(pt 768 -384)
+	(pt 768 -576)
+)
+(connector
+	(pt 768 -576)
+	(pt 632 -576)
+)
+(connector
+	(pt 632 -536)
+	(pt 632 -576)
+)
+(connector
+	(pt 632 -536)
+	(pt 680 -536)
+)
+(connector
+	(pt 680 -536)
+	(pt 680 -552)
 )
 (junction (pt 624 -472))
 (junction (pt 672 -256))

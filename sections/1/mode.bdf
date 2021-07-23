@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 760 104 936 120)
+	(rect 824 96 1000 112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "mode11" (rect 90 0 128 12)(font "Arial" ))
 	(pt 0 8)
@@ -113,49 +113,6 @@ applicable agreement for further details.
 		(line (pt 78 4)(pt 82 8))
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
-	)
-)
-(symbol
-	(rect 424 80 640 208)
-	(text "mode11_module" (rect 5 0 97 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 112 25 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "firstdigit[3..0]" (rect 0 0 73 14)(font "Arial" (font_size 8)))
-		(text "firstdigit[3..0]" (rect 21 27 94 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "seconddigit[3..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
-		(text "seconddigit[3..0]" (rect 21 43 114 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "thirddigit[3..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
-		(text "thirddigit[3..0]" (rect 21 59 96 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "forthdigit[3..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
-		(text "forthdigit[3..0]" (rect 21 75 98 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "mode11_res" (rect 0 0 70 14)(font "Arial" (font_size 8)))
-		(text "mode11_res" (rect 125 27 195 41)(font "Arial" (font_size 8)))
-		(line (pt 216 32)(pt 200 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 112))
 	)
 )
 (symbol
@@ -201,9 +158,48 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 192 112))
 	)
 )
-(connector
-	(pt 640 112)
-	(pt 760 112)
+(symbol
+	(rect 448 80 664 208)
+	(text "mode11_module" (rect 5 0 97 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "firstdigit[3..0]" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "firstdigit[3..0]" (rect 21 27 94 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "seconddigit[3..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "seconddigit[3..0]" (rect 21 43 114 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "thirddigit[3..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "thirddigit[3..0]" (rect 21 59 96 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "forthdigit[3..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "forthdigit[3..0]" (rect 21 75 98 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "mode11_res" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "mode11_res" (rect 125 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 112))
+	)
 )
 (connector
 	(pt 640 304)
@@ -215,18 +211,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 320 112)
-	(pt 424 112)
-	(bus)
-)
-(connector
 	(pt 336 216)
 	(pt 168 216)
-	(bus)
-)
-(connector
-	(pt 336 128)
-	(pt 424 128)
 	(bus)
 )
 (connector
@@ -235,18 +221,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 360 144)
-	(pt 424 144)
-	(bus)
-)
-(connector
 	(pt 376 352)
 	(pt 376 160)
-	(bus)
-)
-(connector
-	(pt 376 160)
-	(pt 424 160)
 	(bus)
 )
 (connector
@@ -302,6 +278,38 @@ applicable agreement for further details.
 (connector
 	(pt 376 352)
 	(pt 432 352)
+	(bus)
+)
+(connector
+	(pt 816 104)
+	(pt 816 112)
+)
+(connector
+	(pt 824 104)
+	(pt 816 104)
+)
+(connector
+	(pt 816 112)
+	(pt 664 112)
+)
+(connector
+	(pt 448 112)
+	(pt 320 112)
+	(bus)
+)
+(connector
+	(pt 448 128)
+	(pt 336 128)
+	(bus)
+)
+(connector
+	(pt 448 144)
+	(pt 360 144)
+	(bus)
+)
+(connector
+	(pt 448 160)
+	(pt 376 160)
 	(bus)
 )
 (junction (pt 320 144))

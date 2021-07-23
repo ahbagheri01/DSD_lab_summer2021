@@ -147,14 +147,6 @@ C => inst3.IN1
 COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mode|mode11_module:inst|lpm_constant0:inst4
-result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
-
-
-|mode|mode11_module:inst|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
-result[0] <= <VCC>
-
-
 |mode|mode11_module:inst|4bitFA:inst
 res[0] <= HA:inst.S
 res[1] <= fulladder:inst1.S

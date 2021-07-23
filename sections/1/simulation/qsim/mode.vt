@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/23/2021 20:13:31"
+// Generated on "07/23/2021 20:22:28"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    mode
 // 
@@ -119,14 +119,12 @@ end
 initial
 begin
 	mode3_expected = 1'bX;
-	mode3_expected = #999000 1'b0;
 end 
 
 // expected mode11
 initial
 begin
 	mode11_expected = 1'bX;
-	mode11_expected = #999000 1'b0;
 end 
 // generate trigger
 always @(mode3_expected or mode3 or mode11_expected or mode11)
@@ -217,6 +215,15 @@ begin
 	firstdigit[3] = #50000 1'b0;
 	firstdigit[3] = #10000 1'b1;
 	firstdigit[3] = #50000 1'b0;
+	firstdigit[3] = #440000 1'b1;
+	# 400000;
+	repeat(7)
+	begin
+		firstdigit[3] = 1'b0;
+		firstdigit[3] = #400000 1'b1;
+		# 400000;
+	end
+	firstdigit[3] = 1'b0;
 end 
 // firstdigit[ 2 ]
 initial
@@ -228,6 +235,15 @@ begin
 	firstdigit[2] = #60000 1'b0;
 	firstdigit[2] = #40000 1'b1;
 	firstdigit[2] = #90000 1'b0;
+	firstdigit[2] = #350000 1'b1;
+	# 200000;
+	repeat(15)
+	begin
+		firstdigit[2] = 1'b0;
+		firstdigit[2] = #200000 1'b1;
+		# 200000;
+	end
+	firstdigit[2] = 1'b0;
 end 
 // firstdigit[ 1 ]
 initial
@@ -239,6 +255,17 @@ begin
 	firstdigit[1] = #60000 1'b0;
 	firstdigit[1] = #80000 1'b1;
 	firstdigit[1] = #50000 1'b0;
+	firstdigit[1] = #250000 1'b1;
+	# 100000;
+	repeat(31)
+	begin
+		firstdigit[1] = 1'b0;
+		firstdigit[1] = #100000 1'b1;
+		# 100000;
+	end
+	firstdigit[1] = 1'b0;
+	firstdigit[1] = #100000 1'b1;
+	firstdigit[1] = #60000 1'b0;
 end 
 // firstdigit[ 0 ]
 initial
@@ -256,6 +283,17 @@ begin
 	firstdigit[0] = #50000 1'b0;
 	firstdigit[0] = #10000 1'b1;
 	firstdigit[0] = #50000 1'b0;
+	firstdigit[0] = #90000 1'b1;
+	# 50000;
+	repeat(64)
+	begin
+		firstdigit[0] = 1'b0;
+		firstdigit[0] = #50000 1'b1;
+		# 50000;
+	end
+	firstdigit[0] = 1'b0;
+	firstdigit[0] = #50000 1'b1;
+	firstdigit[0] = #10000 1'b0;
 end 
 // seconddigit[ 3 ]
 initial
@@ -267,6 +305,15 @@ begin
 	seconddigit[3] = #50000 1'b0;
 	seconddigit[3] = #60000 1'b1;
 	seconddigit[3] = #50000 1'b0;
+	seconddigit[3] = #520000 1'b1;
+	# 480000;
+	repeat(5)
+	begin
+		seconddigit[3] = 1'b0;
+		seconddigit[3] = #480000 1'b1;
+		# 480000;
+	end
+	seconddigit[3] = 1'b0;
 end 
 // seconddigit[ 2 ]
 initial
@@ -276,6 +323,17 @@ begin
 	seconddigit[2] = #40000 1'b0;
 	seconddigit[2] = #140000 1'b1;
 	seconddigit[2] = #100000 1'b0;
+	seconddigit[2] = #440000 1'b1;
+	# 240000;
+	repeat(11)
+	begin
+		seconddigit[2] = 1'b0;
+		seconddigit[2] = #240000 1'b1;
+		# 240000;
+	end
+	seconddigit[2] = 1'b0;
+	seconddigit[2] = #240000 1'b1;
+	seconddigit[2] = #160000 1'b0;
 end 
 // seconddigit[ 1 ]
 initial
@@ -285,6 +343,17 @@ begin
 	seconddigit[1] = #40000 1'b0;
 	seconddigit[1] = #180000 1'b1;
 	seconddigit[1] = #60000 1'b0;
+	seconddigit[1] = #320000 1'b1;
+	# 120000;
+	repeat(24)
+	begin
+		seconddigit[1] = 1'b0;
+		seconddigit[1] = #120000 1'b1;
+		# 120000;
+	end
+	seconddigit[1] = 1'b0;
+	seconddigit[1] = #120000 1'b1;
+	seconddigit[1] = #40000 1'b0;
 end 
 // seconddigit[ 0 ]
 initial
@@ -294,6 +363,15 @@ begin
 	seconddigit[0] = #40000 1'b0;
 	seconddigit[0] = #160000 1'b1;
 	seconddigit[0] = #240000 1'b0;
+	seconddigit[0] = #100000 1'b1;
+	# 60000;
+	repeat(50)
+	begin
+		seconddigit[0] = 1'b0;
+		seconddigit[0] = #60000 1'b1;
+		# 60000;
+	end
+	seconddigit[0] = 1'b0;
 end 
 // thirddigit[ 3 ]
 initial
@@ -305,6 +383,17 @@ begin
 	thirddigit[3] = #50000 1'b0;
 	thirddigit[3] = #160000 1'b1;
 	thirddigit[3] = #110000 1'b0;
+	thirddigit[3] = #600000 1'b1;
+	# 560000;
+	repeat(4)
+	begin
+		thirddigit[3] = 1'b0;
+		thirddigit[3] = #560000 1'b1;
+		# 560000;
+	end
+	thirddigit[3] = 1'b0;
+	thirddigit[3] = #560000 1'b1;
+	thirddigit[3] = #240000 1'b0;
 end 
 // thirddigit[ 2 ]
 initial
@@ -314,6 +403,15 @@ begin
 	thirddigit[2] = #50000 1'b0;
 	thirddigit[2] = #150000 1'b1;
 	thirddigit[2] = #50000 1'b0;
+	thirddigit[2] = #490000 1'b1;
+	# 280000;
+	repeat(10)
+	begin
+		thirddigit[2] = 1'b0;
+		thirddigit[2] = #280000 1'b1;
+		# 280000;
+	end
+	thirddigit[2] = 1'b0;
 end 
 // thirddigit[ 1 ]
 initial
@@ -321,6 +419,17 @@ begin
 	thirddigit[1] = 1'b0;
 	thirddigit[1] = #100000 1'b1;
 	thirddigit[1] = #50000 1'b0;
+	thirddigit[1] = #550000 1'b1;
+	# 140000;
+	repeat(21)
+	begin
+		thirddigit[1] = 1'b0;
+		thirddigit[1] = #140000 1'b1;
+		# 140000;
+	end
+	thirddigit[1] = 1'b0;
+	thirddigit[1] = #140000 1'b1;
+	thirddigit[1] = #100000 1'b0;
 end 
 // thirddigit[ 0 ]
 initial
@@ -330,6 +439,17 @@ begin
 	thirddigit[0] = #30000 1'b0;
 	thirddigit[0] = #300000 1'b1;
 	thirddigit[0] = #160000 1'b0;
+	thirddigit[0] = #110000 1'b1;
+	# 70000;
+	repeat(44)
+	begin
+		thirddigit[0] = 1'b0;
+		thirddigit[0] = #70000 1'b1;
+		# 70000;
+	end
+	thirddigit[0] = 1'b0;
+	thirddigit[0] = #70000 1'b1;
+	thirddigit[0] = #30000 1'b0;
 end 
 // forthdigit[ 3 ]
 initial
@@ -341,6 +461,15 @@ begin
 	forthdigit[3] = #60000 1'b0;
 	forthdigit[3] = #60000 1'b1;
 	forthdigit[3] = #50000 1'b0;
+	forthdigit[3] = #720000 1'b1;
+	# 680000;
+	repeat(4)
+	begin
+		forthdigit[3] = 1'b0;
+		forthdigit[3] = #680000 1'b1;
+		# 680000;
+	end
+	forthdigit[3] = 1'b0;
 end 
 // forthdigit[ 2 ]
 initial
@@ -350,6 +479,15 @@ begin
 	forthdigit[2] = #30000 1'b0;
 	forthdigit[2] = #170000 1'b1;
 	forthdigit[2] = #60000 1'b0;
+	forthdigit[2] = #430000 1'b1;
+	# 340000;
+	repeat(9)
+	begin
+		forthdigit[2] = 1'b0;
+		forthdigit[2] = #340000 1'b1;
+		# 340000;
+	end
+	forthdigit[2] = 1'b0;
 end 
 // forthdigit[ 1 ]
 initial
@@ -361,6 +499,15 @@ begin
 	forthdigit[1] = #30000 1'b0;
 	forthdigit[1] = #170000 1'b1;
 	forthdigit[1] = #60000 1'b0;
+	forthdigit[1] = #260000 1'b1;
+	# 170000;
+	repeat(19)
+	begin
+		forthdigit[1] = 1'b0;
+		forthdigit[1] = #170000 1'b1;
+		# 170000;
+	end
+	forthdigit[1] = 1'b0;
 end 
 // forthdigit[ 0 ]
 initial
@@ -374,6 +521,15 @@ begin
 	forthdigit[0] = #200000 1'b0;
 	forthdigit[0] = #60000 1'b1;
 	forthdigit[0] = #50000 1'b0;
+	forthdigit[0] = #125000 1'b1;
+	# 85000;
+	repeat(39)
+	begin
+		forthdigit[0] = 1'b0;
+		forthdigit[0] = #85000 1'b1;
+		# 85000;
+	end
+	forthdigit[0] = 1'b0;
 end 
 
 mode_vlg_sample_tst tb_sample (
