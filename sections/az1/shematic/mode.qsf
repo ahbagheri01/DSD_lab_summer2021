@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY recognizer
+set_global_assignment -name TOP_LEVEL_ENTITY mode
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:10:21  JULY 23, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -65,8 +65,11 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE test2bitadder.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE 3bitaddertest.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE 4bitaddertest.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE maintest.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE testmode11.vwf
+set_global_assignment -name QIP_FILE lpm_constant0.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/summer/DSD_lab/sections/az1/shematic/Waveform.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/summer/DSD_lab_summer2021/sections/az1/shematic/testmode11.vwf"

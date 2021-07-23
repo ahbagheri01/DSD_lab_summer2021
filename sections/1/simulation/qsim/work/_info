@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\summer\DSD_lab_summer2021\sections\1\simulation\qsim
+vmode
+Z1 I[Q1R::XRkToYKN[jEnJ3`1
+Z2 VJAUXa^Hz3`IE>ISo8hN4?2
+Z3 dD:\summer\DSD_lab_summer2021\sections\1\simulation\qsim
+Z4 w1627055012
+Z5 8mode.vo
+Z6 Fmode.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 bIT[6M[PGPaCnJHMEWaYZ0
+!s85 0
+Z10 !s108 1627055013.567000
+Z11 !s107 mode.vo|
+Z12 !s90 -work|work|mode.vo|
+!s101 -O0
+vmode_vlg_check_tst
+!i10b 1
+!s100 YS[;3Q170GCW3TThC[UT21
+ISjR6_?0O@1Ne?^BhJ:DV<2
+V[EkYK7bDiV;2dXK8;F;9^3
+R3
+Z13 w1627055011
+Z14 8mode.vt
+Z15 Fmode.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z16 !s108 1627055013.661000
+Z17 !s107 mode.vt|
+Z18 !s90 -work|work|mode.vt|
+!s101 -O0
+R8
+vmode_vlg_sample_tst
+!i10b 1
+!s100 <NZgX23dafo__3Lz4R0_i3
+I^R[2bnM::3M13h@0K`P@f3
+V@E1W94Nl4LF:TkI1n5`7n0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vmode_vlg_vec_tst
+!i10b 1
+!s100 FcE60Ea?8`9Rg>C2h[Q`b0
+IFToW8M?75hcG3OKh:SD]R0
+V[OL=3XR58>>FCiihF7UZl3
+R3
+R13
+R14
+R15
+L0 187
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

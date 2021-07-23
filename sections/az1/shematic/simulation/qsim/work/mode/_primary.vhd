@@ -2,8 +2,10 @@ library verilog;
 use verilog.vl_types.all;
 entity mode is
     port(
-        \out\           : out    vl_logic_vector(4 downto 0);
-        \in1_\          : in     vl_logic_vector(3 downto 0);
-        \in2_\          : in     vl_logic_vector(3 downto 0)
+        mode11          : out    vl_logic;
+        firstdigit      : in     vl_logic_vector(3 downto 0);
+        forthdigit      : in     vl_logic_vector(3 downto 0);
+        seconddigit     : in     vl_logic_vector(3 downto 0);
+        thirddigit      : in     vl_logic_vector(3 downto 0)
     );
 end mode;

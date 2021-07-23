@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mode
-Fri Jul 23 18:01:25 2021
+Fri Jul 23 20:05:04 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,9 +13,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. Analysis & Synthesis IP Cores Summary
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: mode11_module:inst|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 23 18:01:25 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 23 20:05:04 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mode                                            ;
-; Top-level Entity Name              ; recognizer                                      ;
+; Top-level Entity Name              ; mode                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 43                                              ;
-;     Total combinational functions  ; 43                                              ;
+; Total logic elements               ; 33                                              ;
+;     Total combinational functions  ; 33                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 18                                              ;
+; Total pins                         ; 17                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +65,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; recognizer         ; mode               ;
+; Top-level entity name                                                      ; mode               ; mode               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -153,78 +155,83 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
-; recognizer.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/recognizer.bdf    ;         ;
-; mode3_module.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/mode3_module.bdf  ;         ;
-; mode3_digit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/mode3_digit.bdf   ;         ;
-; fulladder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/fulladder.bdf     ;         ;
-; HA.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/HA.bdf            ;         ;
-; 2bitFA.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/2bitFA.bdf        ;         ;
-; 3bitFA.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/3bitFA.bdf        ;         ;
-; 4bitFA.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/4bitFA.bdf        ;         ;
-; mode11_module.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/mode11_module.bdf ;         ;
-; 5bitFA.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab/sections/az1/shematic/5bitFA.bdf        ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; mode.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/mode.bdf           ;         ;
+; fulladder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/fulladder.bdf      ;         ;
+; HA.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/HA.bdf             ;         ;
+; 4bitFA.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/4bitFA.bdf         ;         ;
+; mode11_module.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/mode11_module.bdf  ;         ;
+; 5bitFA.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/5bitFA.bdf         ;         ;
+; lpm_constant0.vhd                ; yes             ; User Wizard-Generated File         ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/lpm_constant0.vhd  ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; d:/quartus/intelfpga/quartus/libraries/megafunctions/lpm_constant.tdf ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 43             ;
-;                                             ;                ;
-; Total combinational functions               ; 43             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 25             ;
-;     -- 3 input functions                    ; 18             ;
-;     -- <=2 input functions                  ; 0              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 43             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 0              ;
-;     -- Dedicated logic registers            ; 0              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 18             ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; seconddigit[0] ;
-; Maximum fan-out                             ; 6              ;
-; Total fan-out                               ; 156            ;
-; Average fan-out                             ; 2.56           ;
-+---------------------------------------------+----------------+
++------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                          ;
++---------------------------------------------+--------------------------------------------------------+
+; Resource                                    ; Usage                                                  ;
++---------------------------------------------+--------------------------------------------------------+
+; Estimated Total logic elements              ; 33                                                     ;
+;                                             ;                                                        ;
+; Total combinational functions               ; 33                                                     ;
+; Logic element usage by number of LUT inputs ;                                                        ;
+;     -- 4 input functions                    ; 20                                                     ;
+;     -- 3 input functions                    ; 13                                                     ;
+;     -- <=2 input functions                  ; 0                                                      ;
+;                                             ;                                                        ;
+; Logic elements by mode                      ;                                                        ;
+;     -- normal mode                          ; 33                                                     ;
+;     -- arithmetic mode                      ; 0                                                      ;
+;                                             ;                                                        ;
+; Total registers                             ; 0                                                      ;
+;     -- Dedicated logic registers            ; 0                                                      ;
+;     -- I/O registers                        ; 0                                                      ;
+;                                             ;                                                        ;
+; I/O pins                                    ; 17                                                     ;
+; Embedded Multiplier 9-bit elements          ; 0                                                      ;
+; Maximum fan-out node                        ; mode11_module:inst|4bitFA:inst|fulladder:inst1|inst1~0 ;
+; Maximum fan-out                             ; 6                                                      ;
+; Total fan-out                               ; 120                                                    ;
+; Average fan-out                             ; 2.40                                                   ;
++---------------------------------------------+--------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
-; |recognizer                ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |recognizer                                                  ; work         ;
-;    |mode11_module:inst1|   ; 30 (8)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1                              ; work         ;
-;       |4bitFA:inst1|       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst1                 ; work         ;
-;          |fulladder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst1|fulladder:inst1 ; work         ;
-;          |fulladder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst1|fulladder:inst2 ; work         ;
-;          |fulladder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst1|fulladder:inst3 ; work         ;
-;       |4bitFA:inst|        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst                  ; work         ;
-;          |fulladder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst|fulladder:inst1  ; work         ;
-;          |fulladder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst|fulladder:inst2  ; work         ;
-;          |fulladder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|4bitFA:inst|fulladder:inst3  ; work         ;
-;       |5bitFA:inst2|       ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|5bitFA:inst2                 ; work         ;
-;          |fulladder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst1 ; work         ;
-;          |fulladder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst2 ; work         ;
-;          |fulladder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst3 ; work         ;
-;          |fulladder:inst4| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst4 ; work         ;
-;          |fulladder:inst|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst  ; work         ;
-;    |mode3_module:inst|     ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |recognizer|mode3_module:inst                                ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; |mode                      ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |mode                                                 ; work         ;
+;    |mode11_module:inst|    ; 33 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst                              ; work         ;
+;       |4bitFA:inst1|       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst1                 ; work         ;
+;          |fulladder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst1|fulladder:inst1 ; work         ;
+;          |fulladder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst1|fulladder:inst2 ; work         ;
+;          |fulladder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst1|fulladder:inst3 ; work         ;
+;       |4bitFA:inst|        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst                  ; work         ;
+;          |fulladder:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst|fulladder:inst1  ; work         ;
+;          |fulladder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst|fulladder:inst2  ; work         ;
+;          |fulladder:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|4bitFA:inst|fulladder:inst3  ; work         ;
+;       |5bitFA:inst7|       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|5bitFA:inst7                 ; work         ;
+;          |fulladder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|5bitFA:inst7|fulladder:inst1 ; work         ;
+;          |fulladder:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|5bitFA:inst7|fulladder:inst2 ; work         ;
+;          |fulladder:inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|5bitFA:inst7|fulladder:inst3 ; work         ;
+;          |fulladder:inst|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mode|mode11_module:inst|5bitFA:inst7|fulladder:inst  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                               ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------+----------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                              ; IP Include File                                                      ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------+----------------------------------------------------------------------+
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |mode|mode11_module:inst|lpm_constant0:inst4 ; D:/summer/DSD_lab_summer2021/sections/az1/shematic/lpm_constant0.vhd ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------+----------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -242,6 +249,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mode11_module:inst|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+---------------------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                            ;
++--------------------+------------------+---------------------------------------------------------------------------------+
+; LPM_WIDTH          ; 1                ; Signed Integer                                                                  ;
+; LPM_CVALUE         ; 1                ; Signed Integer                                                                  ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                                         ;
+; CBXI_PARAMETER     ; lpm_constant_4e6 ; Untyped                                                                         ;
++--------------------+------------------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -257,7 +277,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Jul 23 18:01:23 2021
+    Info: Processing started: Fri Jul 23 20:05:01 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mode -c mode
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file recognizer.bdf
@@ -284,26 +304,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file mode11_
     Info (12023): Found entity 1: mode11_module
 Info (12021): Found 1 design units, including 1 entities, in source file 5bitfa.bdf
     Info (12023): Found entity 1: 5bitFA
-Info (12127): Elaborating entity "recognizer" for the top level hierarchy
-Info (12128): Elaborating entity "mode3_module" for hierarchy "mode3_module:inst"
-Info (12128): Elaborating entity "mode3_digit" for hierarchy "mode3_module:inst|mode3_digit:inst7"
-Info (12128): Elaborating entity "3bitFA" for hierarchy "mode3_module:inst|3bitFA:inst6"
-Info (12128): Elaborating entity "HA" for hierarchy "mode3_module:inst|3bitFA:inst6|HA:inst"
-Info (12128): Elaborating entity "fulladder" for hierarchy "mode3_module:inst|3bitFA:inst6|fulladder:inst1"
-Info (12128): Elaborating entity "2bitFA" for hierarchy "mode3_module:inst|2bitFA:inst4"
-Info (12128): Elaborating entity "mode11_module" for hierarchy "mode11_module:inst1"
-Info (12128): Elaborating entity "5bitFA" for hierarchy "mode11_module:inst1|5bitFA:inst2"
-Info (12128): Elaborating entity "4bitFA" for hierarchy "mode11_module:inst1|4bitFA:inst"
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant0.vhd
+    Info (12022): Found design unit 1: lpm_constant0-SYN
+    Info (12023): Found entity 1: lpm_constant0
+Info (12127): Elaborating entity "mode" for the top level hierarchy
+Info (12128): Elaborating entity "mode11_module" for hierarchy "mode11_module:inst"
+Info (12128): Elaborating entity "5bitFA" for hierarchy "mode11_module:inst|5bitFA:inst7"
+Info (12128): Elaborating entity "fulladder" for hierarchy "mode11_module:inst|5bitFA:inst7|fulladder:inst3"
+Info (12128): Elaborating entity "lpm_constant0" for hierarchy "mode11_module:inst|lpm_constant0:inst4"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "mode11_module:inst|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "mode11_module:inst|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "mode11_module:inst|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "1"
+Info (12128): Elaborating entity "4bitFA" for hierarchy "mode11_module:inst|4bitFA:inst"
+Info (12128): Elaborating entity "HA" for hierarchy "mode11_module:inst|4bitFA:inst|HA:inst"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 43 logic cells
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 33 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4593 megabytes
-    Info: Processing ended: Fri Jul 23 18:01:25 2021
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4645 megabytes
+    Info: Processing ended: Fri Jul 23 20:05:04 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
