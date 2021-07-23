@@ -1,0 +1,462 @@
+|recognizer
+mode3 <= mode3_module:inst.mode3_out
+firstdigit[0] => mode3_module:inst.firstdigit[0]
+firstdigit[0] => mode11_module:inst1.firstdigit[0]
+firstdigit[1] => mode3_module:inst.firstdigit[1]
+firstdigit[1] => mode11_module:inst1.firstdigit[1]
+firstdigit[2] => mode3_module:inst.firstdigit[2]
+firstdigit[2] => mode11_module:inst1.firstdigit[2]
+firstdigit[3] => mode3_module:inst.firstdigit[3]
+firstdigit[3] => mode11_module:inst1.firstdigit[3]
+forthdigit[0] => mode3_module:inst.forthdigit[0]
+forthdigit[0] => mode11_module:inst1.forthdigit[0]
+forthdigit[1] => mode3_module:inst.forthdigit[1]
+forthdigit[1] => mode11_module:inst1.forthdigit[1]
+forthdigit[2] => mode3_module:inst.forthdigit[2]
+forthdigit[2] => mode11_module:inst1.forthdigit[2]
+forthdigit[3] => mode3_module:inst.forthdigit[3]
+forthdigit[3] => mode11_module:inst1.forthdigit[3]
+seconddigit[0] => mode3_module:inst.seconddigit[0]
+seconddigit[0] => mode11_module:inst1.seconddigit[0]
+seconddigit[1] => mode3_module:inst.seconddigit[1]
+seconddigit[1] => mode11_module:inst1.seconddigit[1]
+seconddigit[2] => mode3_module:inst.seconddigit[2]
+seconddigit[2] => mode11_module:inst1.seconddigit[2]
+seconddigit[3] => mode3_module:inst.seconddigit[3]
+seconddigit[3] => mode11_module:inst1.seconddigit[3]
+thirddigit[0] => mode3_module:inst.thirddigit[0]
+thirddigit[0] => mode11_module:inst1.thirddigit[0]
+thirddigit[1] => mode3_module:inst.thirddigit[1]
+thirddigit[1] => mode11_module:inst1.thirddigit[1]
+thirddigit[2] => mode3_module:inst.thirddigit[2]
+thirddigit[2] => mode11_module:inst1.thirddigit[2]
+thirddigit[3] => mode3_module:inst.thirddigit[3]
+thirddigit[3] => mode11_module:inst1.thirddigit[3]
+mode11 <= mode11_module:inst1.mode11_res
+
+
+|recognizer|mode3_module:inst
+mode3_out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+firstdigit[0] => mode3_digit:inst.in[0]
+firstdigit[1] => mode3_digit:inst.in[1]
+firstdigit[2] => mode3_digit:inst.in[2]
+firstdigit[3] => mode3_digit:inst.in[3]
+seconddigit[0] => mode3_digit:inst1.in[0]
+seconddigit[1] => mode3_digit:inst1.in[1]
+seconddigit[2] => mode3_digit:inst1.in[2]
+seconddigit[3] => mode3_digit:inst1.in[3]
+thirddigit[0] => mode3_digit:inst2.in[0]
+thirddigit[1] => mode3_digit:inst2.in[1]
+thirddigit[2] => mode3_digit:inst2.in[2]
+thirddigit[3] => mode3_digit:inst2.in[3]
+forthdigit[0] => mode3_digit:inst3.in[0]
+forthdigit[1] => mode3_digit:inst3.in[1]
+forthdigit[2] => mode3_digit:inst3.in[2]
+forthdigit[3] => mode3_digit:inst3.in[3]
+
+
+|recognizer|mode3_module:inst|mode3_digit:inst7
+mode3_out[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+mode3_out[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst6.IN3
+in[0] => inst8.IN1
+in[0] => inst.IN0
+in[0] => inst10.IN0
+in[1] => inst1.IN0
+in[1] => inst8.IN0
+in[1] => inst11.IN0
+in[2] => inst3.IN0
+in[2] => inst8.IN2
+in[2] => inst2.IN0
+in[2] => inst10.IN2
+in[3] => inst7.IN0
+in[3] => inst9.IN0
+
+
+|recognizer|mode3_module:inst|3bitFA:inst6
+res[0] <= HA:inst.S
+res[1] <= fulladder:inst1.S
+res[2] <= fulladder:inst2.S
+res[3] <= fulladder:inst2.COut
+A[0] => HA:inst.A
+A[1] => fulladder:inst1.A
+A[2] => fulladder:inst2.A
+B[0] => HA:inst.B
+B[1] => fulladder:inst1.B
+B[2] => fulladder:inst2.B
+
+
+|recognizer|mode3_module:inst|3bitFA:inst6|HA:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+B => inst.IN1
+A => inst1.IN1
+A => inst.IN0
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode3_module:inst|3bitFA:inst6|fulladder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode3_module:inst|3bitFA:inst6|fulladder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode3_module:inst|2bitFA:inst4
+res[0] <= HA:inst.S
+res[1] <= fulladder:inst1.S
+res[2] <= fulladder:inst1.COut
+A[0] => HA:inst.A
+A[1] => fulladder:inst1.A
+B[0] => HA:inst.B
+B[1] => fulladder:inst1.B
+
+
+|recognizer|mode3_module:inst|2bitFA:inst4|fulladder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode3_module:inst|2bitFA:inst4|HA:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+B => inst.IN1
+A => inst1.IN1
+A => inst.IN0
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode3_module:inst|mode3_digit:inst
+mode3_out[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+mode3_out[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst6.IN3
+in[0] => inst8.IN1
+in[0] => inst.IN0
+in[0] => inst10.IN0
+in[1] => inst1.IN0
+in[1] => inst8.IN0
+in[1] => inst11.IN0
+in[2] => inst3.IN0
+in[2] => inst8.IN2
+in[2] => inst2.IN0
+in[2] => inst10.IN2
+in[3] => inst7.IN0
+in[3] => inst9.IN0
+
+
+|recognizer|mode3_module:inst|mode3_digit:inst1
+mode3_out[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+mode3_out[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst6.IN3
+in[0] => inst8.IN1
+in[0] => inst.IN0
+in[0] => inst10.IN0
+in[1] => inst1.IN0
+in[1] => inst8.IN0
+in[1] => inst11.IN0
+in[2] => inst3.IN0
+in[2] => inst8.IN2
+in[2] => inst2.IN0
+in[2] => inst10.IN2
+in[3] => inst7.IN0
+in[3] => inst9.IN0
+
+
+|recognizer|mode3_module:inst|2bitFA:inst5
+res[0] <= HA:inst.S
+res[1] <= fulladder:inst1.S
+res[2] <= fulladder:inst1.COut
+A[0] => HA:inst.A
+A[1] => fulladder:inst1.A
+B[0] => HA:inst.B
+B[1] => fulladder:inst1.B
+
+
+|recognizer|mode3_module:inst|2bitFA:inst5|fulladder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode3_module:inst|2bitFA:inst5|HA:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+B => inst.IN1
+A => inst1.IN1
+A => inst.IN0
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode3_module:inst|mode3_digit:inst2
+mode3_out[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+mode3_out[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst6.IN3
+in[0] => inst8.IN1
+in[0] => inst.IN0
+in[0] => inst10.IN0
+in[1] => inst1.IN0
+in[1] => inst8.IN0
+in[1] => inst11.IN0
+in[2] => inst3.IN0
+in[2] => inst8.IN2
+in[2] => inst2.IN0
+in[2] => inst10.IN2
+in[3] => inst7.IN0
+in[3] => inst9.IN0
+
+
+|recognizer|mode3_module:inst|mode3_digit:inst3
+mode3_out[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+mode3_out[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst6.IN3
+in[0] => inst8.IN1
+in[0] => inst.IN0
+in[0] => inst10.IN0
+in[1] => inst1.IN0
+in[1] => inst8.IN0
+in[1] => inst11.IN0
+in[2] => inst3.IN0
+in[2] => inst8.IN2
+in[2] => inst2.IN0
+in[2] => inst10.IN2
+in[3] => inst7.IN0
+in[3] => inst9.IN0
+
+
+|recognizer|mode11_module:inst1
+mode11_res <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+firstdigit[0] => 4bitFA:inst.A[0]
+firstdigit[1] => 4bitFA:inst.A[1]
+firstdigit[2] => 4bitFA:inst.A[2]
+firstdigit[3] => 4bitFA:inst.A[3]
+thirddigit[0] => 4bitFA:inst.B[0]
+thirddigit[1] => 4bitFA:inst.B[1]
+thirddigit[2] => 4bitFA:inst.B[2]
+thirddigit[3] => 4bitFA:inst.B[3]
+seconddigit[0] => 4bitFA:inst1.A[0]
+seconddigit[1] => 4bitFA:inst1.A[1]
+seconddigit[2] => 4bitFA:inst1.A[2]
+seconddigit[3] => 4bitFA:inst1.A[3]
+forthdigit[0] => 4bitFA:inst1.B[0]
+forthdigit[1] => 4bitFA:inst1.B[1]
+forthdigit[2] => 4bitFA:inst1.B[2]
+forthdigit[3] => 4bitFA:inst1.B[3]
+
+
+|recognizer|mode11_module:inst1|5bitFA:inst2
+res[0] <= fulladder:inst.S
+res[1] <= fulladder:inst1.S
+res[2] <= fulladder:inst2.S
+res[3] <= fulladder:inst3.S
+res[4] <= fulladder:inst4.S
+res[5] <= fulladder:inst4.COut
+A[0] => fulladder:inst.A
+A[1] => fulladder:inst1.A
+A[2] => fulladder:inst2.A
+A[3] => fulladder:inst3.A
+A[4] => fulladder:inst4.A
+B[0] => fulladder:inst.B
+B[1] => fulladder:inst1.B
+B[2] => fulladder:inst2.B
+B[3] => fulladder:inst3.B
+B[4] => fulladder:inst4.B
+cin => fulladder:inst.C
+
+
+|recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|5bitFA:inst2|fulladder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst
+res[0] <= HA:inst.S
+res[1] <= fulladder:inst1.S
+res[2] <= fulladder:inst2.S
+res[3] <= fulladder:inst3.S
+res[4] <= fulladder:inst3.COut
+A[0] => HA:inst.A
+A[1] => fulladder:inst1.A
+A[2] => fulladder:inst2.A
+A[3] => fulladder:inst3.A
+B[0] => HA:inst.B
+B[1] => fulladder:inst1.B
+B[2] => fulladder:inst2.B
+B[3] => fulladder:inst3.B
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst|HA:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+B => inst.IN1
+A => inst1.IN1
+A => inst.IN0
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst|fulladder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst|fulladder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst|fulladder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst1
+res[0] <= HA:inst.S
+res[1] <= fulladder:inst1.S
+res[2] <= fulladder:inst2.S
+res[3] <= fulladder:inst3.S
+res[4] <= fulladder:inst3.COut
+A[0] => HA:inst.A
+A[1] => fulladder:inst1.A
+A[2] => fulladder:inst2.A
+A[3] => fulladder:inst3.A
+B[0] => HA:inst.B
+B[1] => fulladder:inst1.B
+B[2] => fulladder:inst2.B
+B[3] => fulladder:inst3.B
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst1|HA:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+B => inst.IN1
+A => inst1.IN1
+A => inst.IN0
+C <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst1|fulladder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst1|fulladder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|recognizer|mode11_module:inst1|4bitFA:inst1|fulladder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+C => inst1.IN1
+C => inst3.IN1
+COut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

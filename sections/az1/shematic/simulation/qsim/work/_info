@@ -1,0 +1,195 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\summer\DSD_lab\sections\az1\shematic\simulation\qsim
+vmode
+Z1 I]?Kd8;e6K_f_@e2lBYkJE0
+Z2 Vh^Y=0CRHj[MVI8Ukn[:T`3
+Z3 dD:\summer\DSD_lab\sections\az1\shematic\simulation\qsim
+Z4 w1627046781
+Z5 8mode.vo
+Z6 Fmode.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|mode.vo|
+Z9 o-work work -O0
+Z10 !s100 nFokgeH;X<^XO3mX9@ZSD0
+Z11 !s108 1627046783.021000
+Z12 !s107 mode.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vmode11_module
+Z13 !s100 ZdLbkNdaMJk6i<Oo03S<V0
+Z14 IYQ;1;9I?dCUi7C4SB]O8N0
+Z15 VF44L4MJmN8[>?e^UIa^jV3
+R3
+Z16 w1627043844
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z17 !s108 1627043845.584000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vmode11_module_vlg_vec_tst
+Z18 !s100 8;chCBzMAAA^6?c2kcD[21
+Z19 I0FP4T24O;5a7ao;gQDEGo1
+Z20 VI]O4H?LEbbISf17L^EDYJ1
+R3
+R16
+Z21 8mode.vt
+Z22 Fmode.vt
+L0 29
+R7
+r1
+31
+Z23 !s90 -work|work|mode.vt|
+R9
+Z24 !s108 1627043845.655000
+Z25 !s107 mode.vt|
+!i10b 1
+!s85 0
+!s101 -O0
+vmode_vlg_check_tst
+Z26 I2Yz=PFM7i`H85mBgAZ[7o3
+Z27 VRe88ND3P]V4?jPj7faVPO1
+R3
+R4
+R21
+R22
+L0 59
+R7
+r1
+31
+Z28 !s108 1627046783.119000
+R25
+R23
+R9
+Z29 !s100 b=`C>odOX1e@EgFZMkV]N2
+!i10b 1
+!s85 0
+!s101 -O0
+vmode_vlg_sample_tst
+Z30 IEogE1N9SffbH=IRJ[W4RM0
+Z31 Vc[@K9b2D@XbQglXco27@42
+R3
+R4
+R21
+R22
+L0 29
+R7
+r1
+31
+R28
+R25
+R23
+R9
+Z32 !s100 J;jH6e63FhbSM3;f5;HK`3
+!i10b 1
+!s85 0
+!s101 -O0
+vmode_vlg_vec_tst
+Z33 I@LCj?cfI<oPG@_b85?K0Z3
+Z34 V[OL=3XR58>>FCiihF7UZl3
+R3
+R4
+R21
+R22
+Z35 L0 230
+R7
+r1
+31
+R28
+R25
+R23
+R9
+Z36 !s100 j]z46jdSI]acn<^gnoj8A2
+!i10b 1
+!s85 0
+!s101 -O0
+vrecognizer
+Z37 I[g<KV2@`R7h2<;a1gbOL^3
+Z38 V;mFITbaz1YfBJE3Y4c1LR3
+R3
+Z39 w1627047120
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+Z40 !s100 d2h]?Lc<kRYQz>1UV54@f3
+!s85 0
+Z41 !s108 1627047121.564000
+R12
+!s101 -O0
+vrecognizer_vlg_check_tst
+!i10b 1
+Z42 !s100 4JzV[z5K[:5B:cCh]W]V_2
+Z43 I5AbN6TQXD[5nH_10Pg:111
+Z44 VY[ENBB3m:4cPGElDl3:_>2
+R3
+Z45 w1627047119
+R21
+R22
+L0 63
+R7
+r1
+!s85 0
+31
+Z46 !s108 1627047121.650000
+Z47 !s107 mode.vt|
+R23
+!s101 -O0
+R9
+vrecognizer_vlg_sample_tst
+!i10b 1
+Z48 !s100 [mL7X9L`iB??5?QabL<QT2
+Z49 I_NCCjKFCznRZzMTiA7M4E0
+Z50 VN_RfQ^Y@Z]m?Y]4QOGTRZ3
+R3
+R45
+R21
+R22
+L0 29
+R7
+r1
+!s85 0
+31
+R46
+R47
+R23
+!s101 -O0
+R9
+vrecognizer_vlg_vec_tst
+!i10b 1
+Z51 !s100 YCM:WM4`85K:gcSmDR6bA2
+Z52 IBjF7N<33UXd[5^JA^YM?@1
+Z53 VEe:J4U[>z`cL:1bjo@RcQ0
+R3
+R45
+R21
+R22
+Z54 L0 187
+R7
+r1
+!s85 0
+31
+R46
+R47
+R23
+!s101 -O0
+R9
