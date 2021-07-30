@@ -8,7 +8,7 @@ Z1 !s100 bIT[6M[PGPaCnJHMEWaYZ0
 Z2 I[Q1R::XRkToYKN[jEnJ3`1
 Z3 VJAUXa^Hz3`IE>ISo8hN4?2
 Z4 dD:\summer\DSD_lab_summer2021\sections\1\quartus\simulation\qsim
-Z5 w1627069207
+Z5 w1627102016
 Z6 8mode.vo
 Z7 Fmode.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|mode.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1627069208.745000
+Z11 !s108 1627102017.887000
 Z12 !s107 mode.vo|
 !s101 -O0
 vmode_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 O@2Q0f:]WEBR8ONAHF;ah3
 Z14 Ik^i6<32z_HD1:<h:3zV371
 Z15 V[EkYK7bDiV;2dXK8;F;9^3
 R4
-Z16 w1627069206
+Z16 w1627102014
 Z17 8mode.vt
 Z18 Fmode.vt
 L0 63
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1627069208.869000
+Z19 !s108 1627102018.013000
 Z20 !s107 mode.vt|
 Z21 !s90 -work|work|mode.vt|
 !s101 -O0
