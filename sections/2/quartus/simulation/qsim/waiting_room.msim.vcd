@@ -3,7 +3,7 @@ $comment
 		vcd file waiting_room.msim.vcd -direction
 $end
 $date
-	Fri Jul 30 22:49:45 2021
+	Sat Jul 31 01:28:27 2021
 $end
 $version
 	ModelSim Version 10.1d

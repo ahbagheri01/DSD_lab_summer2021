@@ -8,7 +8,7 @@ Z1 !s100 X>5EX=Hm?h3LRVmc^32jd3
 Z2 I7DM9cFL?ZO6G;TEWGm^]=1
 Z3 V:VEgJ1SL19V;3OEa5<<mn3
 Z4 dD:\summer\DSD_lab_summer2021\sections\2\quartus\simulation\qsim
-Z5 w1627651709
+Z5 w1627678581
 Z6 8waiting_room.vo
 Z7 Fwaiting_room.vo
 L0 31
@@ -17,7 +17,7 @@ r1
 31
 Z9 !s90 -work|work|waiting_room.vo|
 Z10 o-work work -O0
-Z11 !s108 1627651710.396000
+Z11 !s108 1627678582.428000
 Z12 !s107 waiting_room.vo|
 !i10b 1
 !s85 0
@@ -27,14 +27,14 @@ Z13 !s100 CdGJe9QC4;:ceUD9`gD@B0
 Z14 IQ@o@2?M_RF2;9@Q7lEdgj3
 Z15 VU_5<lT5S>Ng^2P?44Mm_B0
 R4
-Z16 w1627651708
+Z16 w1627678580
 Z17 8waiting_room.vt
 Z18 Fwaiting_room.vt
 L0 63
 R8
 r1
 31
-Z19 !s108 1627651710.479000
+Z19 !s108 1627678582.601000
 Z20 !s107 waiting_room.vt|
 Z21 !s90 -work|work|waiting_room.vt|
 R10
@@ -61,13 +61,14 @@ R10
 !s85 0
 !s101 -O0
 vcounter_vlg_vec_tst
-Z25 I3cdhXW^4?N@@jZUYRH8601
-Z26 V@9OC]=hZZe;4GTW8>c1jE1
+Z25 !s100 k7Vzh2oGR2X7U@;WZcMLP3
+Z26 I3cdhXW^4?N@@jZUYRH8601
+Z27 V@9OC]=hZZe;4GTW8>c1jE1
 R4
 R16
 R17
 R18
-Z27 L0 235
+Z28 L0 235
 R8
 r1
 31
@@ -75,7 +76,6 @@ R19
 R20
 R21
 R10
-Z28 !s100 k7Vzh2oGR2X7U@;WZcMLP3
 !i10b 1
 !s85 0
 !s101 -O0
@@ -164,7 +164,7 @@ Z50 !s100 6VSkE96FR`j2g0L1BkD[M0
 Z51 IX;lJaHY5XG<=WTETn6ZiB1
 Z52 V1RZe@A<F=P:LXESMG?3`>3
 R4
-Z53 w1627669183
+Z53 w1627678705
 R6
 R7
 L0 31
@@ -175,7 +175,7 @@ R9
 R10
 !i10b 1
 !s85 0
-Z54 !s108 1627669184.801000
+Z54 !s108 1627678706.269000
 R12
 !s101 -O0
 vwaiting_room_vlg_check_tst
@@ -184,7 +184,7 @@ Z55 !s100 @j5EoiWhXecA1Fe6=5`H00
 Z56 IX4dNzo@:gDD@bP`H`XJzJ0
 Z57 VePV7aL1YfWO>4^QB[e@7U0
 R4
-R53
+Z58 w1627678704
 R17
 R18
 L0 67
@@ -192,18 +192,18 @@ R8
 r1
 !s85 0
 31
-Z58 !s108 1627669184.891000
-Z59 !s107 waiting_room.vt|
+Z59 !s108 1627678706.382000
+Z60 !s107 waiting_room.vt|
 R21
 !s101 -O0
 R10
 vwaiting_room_vlg_sample_tst
 !i10b 1
-Z60 !s100 D4U_0YQHi[e`k2KRBnn7F0
-Z61 Ig2UJU2bUJfHhR[@ejBl4h1
-Z62 V^:7]kYR`gYglim=nRNU:U3
+Z61 !s100 D4U_0YQHi[e`k2KRBnn7F0
+Z62 Ig2UJU2bUJfHhR[@ejBl4h1
+Z63 V^:7]kYR`gYglim=nRNU:U3
 R4
-R53
+R58
 R17
 R18
 L0 29
@@ -211,27 +211,27 @@ R8
 r1
 !s85 0
 31
-R58
 R59
+R60
 R21
 !s101 -O0
 R10
 vwaiting_room_vlg_vec_tst
 !i10b 1
-!s100 `gCQXL:[H;Kc3amN0^N=m1
-ILR=JWH<`FUc2Eab8TDgEF2
-Z63 V8^h`o:_J`O>ZR;FRD7hf71
+Z64 !s100 `gCQXL:[H;Kc3amN0^N=m1
+Z65 ILR=JWH<`FUc2Eab8TDgEF2
+Z66 V8^h`o:_J`O>ZR;FRD7hf71
 R4
-R53
+R58
 R17
 R18
-Z64 L0 305
+Z67 L0 305
 R8
 r1
 !s85 0
 31
-R58
 R59
+R60
 R21
 !s101 -O0
 R10
