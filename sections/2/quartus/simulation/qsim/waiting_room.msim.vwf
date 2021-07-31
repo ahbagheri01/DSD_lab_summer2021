@@ -25,14 +25,14 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 2000.0;
+	DATA_DURATION = 1000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 0.0;
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|CLK")
+SIGNAL("counter_vlg_vec_tst|CLK")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -42,7 +42,7 @@ SIGNAL("waiting_room_vlg_vec_tst|CLK")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|ent")
+SIGNAL("counter_vlg_vec_tst|enable")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -52,7 +52,7 @@ SIGNAL("waiting_room_vlg_vec_tst|ent")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|open")
+SIGNAL("counter_vlg_vec_tst|reset")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -62,7 +62,7 @@ SIGNAL("waiting_room_vlg_vec_tst|open")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|out")
+SIGNAL("counter_vlg_vec_tst|up")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -72,7 +72,7 @@ SIGNAL("waiting_room_vlg_vec_tst|out")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|reset")
+SIGNAL("counter_vlg_vec_tst|num[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -82,7 +82,7 @@ SIGNAL("waiting_room_vlg_vec_tst|reset")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|T")
+SIGNAL("counter_vlg_vec_tst|num[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -92,7 +92,7 @@ SIGNAL("waiting_room_vlg_vec_tst|T")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|Close")
+SIGNAL("counter_vlg_vec_tst|num[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -102,7 +102,7 @@ SIGNAL("waiting_room_vlg_vec_tst|Close")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|enable")
+SIGNAL("counter_vlg_vec_tst|num[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -112,7 +112,7 @@ SIGNAL("waiting_room_vlg_vec_tst|enable")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|num[3]")
+SIGNAL("counter_vlg_vec_tst|Q0")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -122,7 +122,7 @@ SIGNAL("waiting_room_vlg_vec_tst|num[3]")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|num[2]")
+SIGNAL("counter_vlg_vec_tst|Q1")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -132,7 +132,7 @@ SIGNAL("waiting_room_vlg_vec_tst|num[2]")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|num[1]")
+SIGNAL("counter_vlg_vec_tst|Q2")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -142,7 +142,7 @@ SIGNAL("waiting_room_vlg_vec_tst|num[1]")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|num[0]")
+SIGNAL("counter_vlg_vec_tst|Q3")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -152,7 +152,7 @@ SIGNAL("waiting_room_vlg_vec_tst|num[0]")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|open_door")
+SIGNAL("counter_vlg_vec_tst|sampler")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -162,7 +162,7 @@ SIGNAL("waiting_room_vlg_vec_tst|open_door")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|Q0")
+SIGNAL("counter_vlg_vec_tst|i1|gnd")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -172,7 +172,7 @@ SIGNAL("waiting_room_vlg_vec_tst|Q0")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|Q1")
+SIGNAL("counter_vlg_vec_tst|i1|vcc")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -182,7 +182,7 @@ SIGNAL("waiting_room_vlg_vec_tst|Q1")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|Q2")
+SIGNAL("counter_vlg_vec_tst|i1|unknown")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -192,7 +192,7 @@ SIGNAL("waiting_room_vlg_vec_tst|Q2")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|Q3")
+SIGNAL("counter_vlg_vec_tst|i1|devclrn")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -202,7 +202,7 @@ SIGNAL("waiting_room_vlg_vec_tst|Q3")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|up")
+SIGNAL("counter_vlg_vec_tst|i1|devpor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -212,7 +212,7 @@ SIGNAL("waiting_room_vlg_vec_tst|up")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|sampler")
+SIGNAL("counter_vlg_vec_tst|i1|devoe")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -222,7 +222,7 @@ SIGNAL("waiting_room_vlg_vec_tst|sampler")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|gnd")
+SIGNAL("counter_vlg_vec_tst|i1|up~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -232,7 +232,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|gnd")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|vcc")
+SIGNAL("counter_vlg_vec_tst|i1|CLK~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -242,7 +242,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|vcc")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|unknown")
+SIGNAL("counter_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -252,7 +252,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|unknown")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|devclrn")
+SIGNAL("counter_vlg_vec_tst|i1|enable~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -262,7 +262,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|devclrn")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|devpor")
+SIGNAL("counter_vlg_vec_tst|i1|inst~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -272,7 +272,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|devpor")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|devoe")
+SIGNAL("counter_vlg_vec_tst|i1|reset~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -282,7 +282,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|CLK~combout")
+SIGNAL("counter_vlg_vec_tst|i1|reset~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -292,7 +292,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|CLK~combout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|CLK~clkctrl_outclk")
+SIGNAL("counter_vlg_vec_tst|i1|inst~regout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -302,7 +302,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|CLK~clkctrl_outclk")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|out~combout")
+SIGNAL("counter_vlg_vec_tst|i1|inst7~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -312,7 +312,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|out~combout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|ent~combout")
+SIGNAL("counter_vlg_vec_tst|i1|inst7~regout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -322,7 +322,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|ent~combout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|T~combout")
+SIGNAL("counter_vlg_vec_tst|i1|inst22~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -332,7 +332,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|T~combout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst9~2_combout")
+SIGNAL("counter_vlg_vec_tst|i1|inst13~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -342,7 +342,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|inst9~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst7~0_combout")
+SIGNAL("counter_vlg_vec_tst|i1|inst13~regout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -352,7 +352,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst7~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|reset~combout")
+SIGNAL("counter_vlg_vec_tst|i1|inst24~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -362,7 +362,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|reset~combout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|reset~clkctrl_outclk")
+SIGNAL("counter_vlg_vec_tst|i1|inst18~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -372,7 +372,7 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|reset~clkctrl_outclk")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst7~regout")
+SIGNAL("counter_vlg_vec_tst|i1|inst18~regout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -382,251 +382,11 @@ SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst7~regout")
 	PARENT = "";
 }
 
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst3~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst1~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst13~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst13~1_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst13~regout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst24~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst18~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst18~regout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst4~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst8~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst~0_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst|inst~regout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|open~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("waiting_room_vlg_vec_tst|i1|inst9~3_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|CLK")
+TRANSITION_LIST("counter_vlg_vec_tst|CLK")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
@@ -730,337 +490,255 @@ TRANSITION_LIST("waiting_room_vlg_vec_tst|CLK")
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|ent")
+TRANSITION_LIST("counter_vlg_vec_tst|enable")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 350.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 290.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|open")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 280.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|out")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 350.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 280.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|reset")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 870.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 1100.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|T")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 660.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 1140.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|Close")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 870.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 180.0;
-		LEVEL 1 FOR 910.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|enable")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 190.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 910.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 540.0;
+		LEVEL 0 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|num[3]")
+TRANSITION_LIST("counter_vlg_vec_tst|reset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 920.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|up")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 450.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 210.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|num[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 230.0;
+		LEVEL 1 FOR 380.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 370.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|num[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 730.0;
-		LEVEL 0 FOR 1120.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|num[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 410.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 970.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|num[1]")
+TRANSITION_LIST("counter_vlg_vec_tst|num[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
+		LEVEL 0 FOR 110.0;
 		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 240.0;
 		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 130.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|num[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
 		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 930.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|num[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 910.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|open_door")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 330.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|Q0")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 910.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|Q1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 930.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|Q2")
+TRANSITION_LIST("counter_vlg_vec_tst|Q0")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 410.0;
-		LEVEL 0 FOR 90.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 970.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|Q3")
+TRANSITION_LIST("counter_vlg_vec_tst|Q1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 130.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|Q2")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 730.0;
-		LEVEL 0 FOR 1120.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|up")
+TRANSITION_LIST("counter_vlg_vec_tst|Q3")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 330.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 230.0;
+		LEVEL 1 FOR 380.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 370.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|sampler")
+TRANSITION_LIST("counter_vlg_vec_tst|sampler")
 {
 	NODE
 	{
@@ -1165,996 +843,584 @@ TRANSITION_LIST("waiting_room_vlg_vec_tst|sampler")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|gnd")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|gnd")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 2000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|vcc")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|vcc")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|unknown")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|devclrn")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|devpor")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|devoe")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 2000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|CLK~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|CLK~clkctrl_outclk")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|out~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 350.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 280.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 240.0;
 		LEVEL 1 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|ent~combout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|unknown")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 350.0;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|devclrn")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|devpor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|devoe")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|up~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 450.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 100.0;
 		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 290.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 210.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|T~combout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|CLK~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 660.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 1140.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst9~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst7~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|CLK~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|enable~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
 		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 130.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 950.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|reset~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 870.0;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 1100.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 540.0;
+		LEVEL 0 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|reset~clkctrl_outclk")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 870.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 1100.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst7~regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 930.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst3~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 530.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 1270.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst1~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 330.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 150.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst13~0_combout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|reset~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 920.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|reset~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 920.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst~regout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 480.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 910.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst13~1_combout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst7~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 430.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 990.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 150.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst13~regout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst7~regout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 410.0;
-		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 970.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst24~0_combout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst22~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 130.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 940.0;
-		LEVEL 1 FOR 910.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 120.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 130.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst18~0_combout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst13~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 130.0;
-		LEVEL 1 FOR 750.0;
-		LEVEL 0 FOR 1120.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 150.0;
 	}
 }
 
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst18~regout")
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst13~regout")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 730.0;
-		LEVEL 0 FOR 1120.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst4~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 870.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 910.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst8~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 190.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 230.0;
-		LEVEL 0 FOR 910.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 210.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 930.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst|inst~regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 910.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|open~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 280.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("waiting_room_vlg_vec_tst|i1|inst9~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 330.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 130.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst24~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 210.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 360.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 370.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst18~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 210.0;
+		LEVEL 1 FOR 380.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 390.0;
+	}
+}
+
+TRANSITION_LIST("counter_vlg_vec_tst|i1|inst18~regout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 230.0;
+		LEVEL 1 FOR 380.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 370.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|CLK";
+	CHANNEL = "counter_vlg_vec_tst|CLK";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -2163,7 +1429,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|ent";
+	CHANNEL = "counter_vlg_vec_tst|enable";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -2172,7 +1438,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|open";
+	CHANNEL = "counter_vlg_vec_tst|reset";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -2181,7 +1447,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|out";
+	CHANNEL = "counter_vlg_vec_tst|up";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -2190,7 +1456,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|reset";
+	CHANNEL = "counter_vlg_vec_tst|num[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -2199,7 +1465,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|T";
+	CHANNEL = "counter_vlg_vec_tst|num[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -2208,7 +1474,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|Close";
+	CHANNEL = "counter_vlg_vec_tst|num[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -2217,7 +1483,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|enable";
+	CHANNEL = "counter_vlg_vec_tst|num[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -2226,7 +1492,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|num[3]";
+	CHANNEL = "counter_vlg_vec_tst|Q0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -2235,7 +1501,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|num[2]";
+	CHANNEL = "counter_vlg_vec_tst|Q1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -2244,7 +1510,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|num[1]";
+	CHANNEL = "counter_vlg_vec_tst|Q2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -2253,7 +1519,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|num[0]";
+	CHANNEL = "counter_vlg_vec_tst|Q3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -2262,7 +1528,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|open_door";
+	CHANNEL = "counter_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -2271,7 +1537,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|Q0";
+	CHANNEL = "counter_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -2280,7 +1546,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|Q1";
+	CHANNEL = "counter_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -2289,7 +1555,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|Q2";
+	CHANNEL = "counter_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -2298,7 +1564,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|Q3";
+	CHANNEL = "counter_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -2307,7 +1573,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|up";
+	CHANNEL = "counter_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -2316,7 +1582,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|sampler";
+	CHANNEL = "counter_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -2325,7 +1591,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|gnd";
+	CHANNEL = "counter_vlg_vec_tst|i1|up~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
@@ -2334,7 +1600,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|vcc";
+	CHANNEL = "counter_vlg_vec_tst|i1|CLK~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -2343,7 +1609,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|unknown";
+	CHANNEL = "counter_vlg_vec_tst|i1|CLK~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -2352,7 +1618,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "counter_vlg_vec_tst|i1|enable~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -2361,7 +1627,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|devpor";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -2370,7 +1636,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|devoe";
+	CHANNEL = "counter_vlg_vec_tst|i1|reset~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -2379,7 +1645,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|CLK~combout";
+	CHANNEL = "counter_vlg_vec_tst|i1|reset~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -2388,7 +1654,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|CLK~clkctrl_outclk";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -2397,7 +1663,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|out~combout";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst7~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -2406,7 +1672,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|ent~combout";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst7~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -2415,7 +1681,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|T~combout";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst22~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -2424,7 +1690,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst9~2_combout";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst13~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -2433,7 +1699,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst7~0_combout";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst13~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
@@ -2442,7 +1708,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|reset~combout";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst24~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -2451,7 +1717,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|reset~clkctrl_outclk";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst18~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -2460,136 +1726,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst7~regout";
+	CHANNEL = "counter_vlg_vec_tst|i1|inst18~regout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst3~combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 35;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst1~combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 36;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst13~0_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 37;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst13~1_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 38;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst13~regout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 39;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst24~0_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 40;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst18~0_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 41;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst18~regout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 42;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst4~0_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 43;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst8~combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 44;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst~0_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 45;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst|inst~regout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 46;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|open~combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 47;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "waiting_room_vlg_vec_tst|i1|inst9~3_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 48;
 	TREE_LEVEL = 0;
 }
 ;

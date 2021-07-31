@@ -1,30 +1,4 @@
-|waiting_room
-Q0 <= counter:inst.Q0
-ent => inst9.IN2
-ent => inst1.IN0
-open => inst6.IN0
-open => inst9.IN1
-open => inst1.IN1
-T => inst9.IN0
-T => inst1.IN2
-out => inst2.IN0
-out => inst5.IN1
-reset => counter:inst.reset
-CLK => counter:inst.CLK
-Q1 <= counter:inst.Q1
-Q2 <= counter:inst.Q2
-Q3 <= counter:inst.Q3
-Close <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-up <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-enable <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-open_door <= inst9.DB_MAX_OUTPUT_PORT_TYPE
-num[0] <= counter:inst.num[0]
-num[1] <= counter:inst.num[1]
-num[2] <= counter:inst.num[2]
-num[3] <= counter:inst.num[3]
-
-
-|waiting_room|counter:inst
+|counter
 Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 num[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 num[1] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
