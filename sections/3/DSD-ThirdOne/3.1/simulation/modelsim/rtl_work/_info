@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Zomorrod\Desktop\DSD-ThirdOne\3.1\simulation\modelsim
+vonebit_comparator
+!i10b 1
+!s100 O5`zYhMkJIU@<ze@k^0Wo3
+I;An3Lg^2W>3>B_M[;NM7?1
+VKjPmFdOIdVVE10le`]PQM0
+Z1 dC:\Users\Zomorrod\Desktop\DSD-ThirdOne\3.1\simulation\modelsim
+w1628268926
+8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v
+FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1628275055.950000
+!s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1 -O0

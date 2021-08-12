@@ -1,0 +1,7 @@
+module serial_comparator(input a, input b, input clk,input rst, output equal, output greater, output less);
+
+	assign equal = rst ? 1 : (clk ? (a==b & equal) : equal);
+	assign greater = rst ? 0 : (clk ? (a>b ? 1 : (a<b ? 0 : greater)) : greater);
+	assign less = rst ? 0 : (clk ? ~(equal | greater) : less);
+
+endmodule

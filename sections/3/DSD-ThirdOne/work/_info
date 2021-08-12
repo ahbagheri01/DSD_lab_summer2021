@@ -1,0 +1,176 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Zomorrod\Desktop\DSDLab3\files\ex3a\simulation\modelsim
+vfourbit_comparator
+Z1 VH:0C;_[IV5PZoD8lQNHCb2
+r1
+31
+Z2 IOB[J<[j@Tni0iVT<h8hN33
+Z3 dC:\Users\Zomorrod\Desktop\DSD-ThirdOne
+Z4 w1203001394
+Z5 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator.v
+Z6 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator.v
+L0 1
+Z7 OV;L;10.1d;51
+Z8 o-work work -O0
+Z9 !s100 oIcgmnl6NPVk[KlzYRmW`1
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator.v|
+Z11 !s108 1628269898.094000
+Z12 !s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfourbit_comparator_tb
+Z13 VSgTZ^llXmziiOXR5805`:3
+r1
+31
+Z14 Ie2?JM]YHeBND=;3T10c5A1
+R3
+Z15 w1628270043
+Z16 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator_tb.v
+Z17 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator_tb.v
+L0 1
+R7
+R8
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator_tb.v|
+Z19 !s100 bkZLj<Y:Z2JM?:@o@9Xc[1
+Z20 !s108 1628270049.053000
+Z21 !s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmain
+Z22 V>kRiJNfj<PhL_fj7?i`I?2
+r1
+31
+Z23 IjPf?j_nIa3PdNVLJGVN[_3
+R3
+Z24 w1203007732
+Z25 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/main.v
+Z26 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/main.v
+L0 1
+R7
+R8
+Z27 !s100 ?liQ^SMMaj_0RY2AUoHlA0
+Z28 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/main.v|
+Z29 !s108 1628268554.579000
+Z30 !s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/main.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vonebit_comparator
+Z31 VKjPmFdOIdVVE10le`]PQM0
+r1
+31
+Z32 I=^D<X0AM:^U6Y[gcbI1hF0
+R3
+Z33 w1628268926
+Z34 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v
+Z35 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v
+L0 1
+R7
+R8
+Z36 !s100 O5`zYhMkJIU@<ze@k^0Wo3
+Z37 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v|
+Z38 !s108 1628269898.157000
+Z39 !s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vonebit_comparator_tb
+Z40 VFJ_9n`cg[Y=mKXdgVgGV:0
+r1
+31
+Z41 I[J`UQ]>lKEehkdP9eX@Hc2
+R3
+Z42 w1628268998
+Z43 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator_tb.v
+Z44 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator_tb.v
+L0 1
+R7
+R8
+Z45 !s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator_tb.v|
+Z46 !s100 fScLo[E8`<?;B=2geGYIl1
+Z47 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator_tb.v|
+Z48 !s108 1628269898.215000
+!i10b 1
+!s85 0
+!s101 -O0
+vonebit_comprator_tb
+Z49 V<JT?U4U0UfkOWPW^gTUXn0
+r1
+31
+Z50 IH@9a=QaV@Y6je3SKR=X]i1
+R3
+Z51 w1628268317
+R43
+R44
+L0 1
+R7
+R8
+R45
+Z52 !s100 k[JFZGT:5a``]_A][ZMYB1
+Z53 !s108 1628268913.905000
+Z54 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vserial_comparator
+Z55 Im7MamOGEzC>`ONRHkHaM72
+Z56 VP]:3mSc0F]gfBK[L>]:iZ2
+R3
+Z57 w1628272844
+Z58 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator.v
+Z59 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator.v
+L0 1
+R7
+r1
+31
+Z60 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator.v|
+R8
+Z61 !s100 99HEgn;_11RZAFo@n=a8c3
+Z62 !s108 1628272855.620000
+Z63 !s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vserial_comparator_tb
+!i10b 1
+!s100 8B[B4Y2kj2R1PQ1B[4H=33
+I1N76QOj1B=B=0KFC`gKJ^1
+Z64 VQhKeT0TdfgZ3B3_BbCcn<1
+R3
+w1628273026
+Z65 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator_tb.v
+Z66 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator_tb.v
+L0 4
+R7
+r1
+!s85 0
+31
+!s108 1628273032.126000
+!s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator_tb.v|
+Z67 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator_tb.v|
+!s101 -O0
+R8
+vsix
+Z68 V?j:oGbUcGMSjQ5[k3PCBM0
+r1
+31
+Z69 IAB90RhzMBUlA>hoaXdnN@3
+R3
+Z70 w1203007540
+Z71 8C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/six.v
+Z72 FC:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/six.v
+L0 1
+R7
+R8
+Z73 !s100 oCEA^GdnVY>z6D3J7T2Vm1
+Z74 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/six.v|
+Z75 !s108 1628268554.714000
+Z76 !s107 C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.3/six.v|
+!i10b 1
+!s85 0
+!s101 -O0

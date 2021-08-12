@@ -1,0 +1,16 @@
+|serial_comparator
+x_in => E_d.IN0
+x_in => L_d.IN1
+y_in => E_d.IN1
+y_in => L_d.IN0
+clk => Ew2.IN1
+clk => Ew3.IN0
+clk => Lw2.IN1
+clk => Lw3.IN0
+reset => E_d.IN1
+reset => L_d.IN1
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+L <= L.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
