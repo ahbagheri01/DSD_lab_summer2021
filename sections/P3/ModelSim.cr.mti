@@ -1,0 +1,43 @@
+C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator.v {1 {vlog -work work C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fourbit_comparator
+
+Top level modules:
+	fourbit_comparator
+
+} {} {}} C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator_tb.v {1 {vlog -work work C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/fourbit_comparator_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fourbit_comparator_tb
+
+Top level modules:
+	fourbit_comparator_tb
+
+} {} {}} C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator.v {1 {vlog -work work C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module serial_comparator
+
+Top level modules:
+	serial_comparator
+
+} {} {}} C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v {1 {vlog -work work C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module onebit_comparator
+
+Top level modules:
+	onebit_comparator
+
+} {} {}} C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator_tb.v {1 {vlog -work work C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.2/serial_comparator_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module serial_comparator_tb
+
+Top level modules:
+	serial_comparator_tb
+
+} {} {}} C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator_tb.v {1 {vlog -work work C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module onebit_comparator_tb
+
+Top level modules:
+	onebit_comparator_tb
+
+} {} {}}

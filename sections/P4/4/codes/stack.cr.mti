@@ -1,0 +1,15 @@
+D:/summer/DSD_lab_summer2021/sections/4/codes/stack_tb.v {1 {vlog -work work D:/summer/DSD_lab_summer2021/sections/4/codes/stack_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module stack_tb
+
+Top level modules:
+	stack_tb
+
+} {} {}} D:/summer/DSD_lab_summer2021/sections/4/codes/stack.v {1 {vlog -work work D:/summer/DSD_lab_summer2021/sections/4/codes/stack.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module stack
+
+Top level modules:
+	stack
+
+} {} {}}

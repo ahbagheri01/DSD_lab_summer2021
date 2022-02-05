@@ -1,0 +1,12 @@
+|onebit_comparator
+a => equal.IN0
+a => LessThan0.IN1
+a => LessThan1.IN1
+b => equal.IN1
+b => LessThan0.IN2
+b => LessThan1.IN2
+equal <= equal.DB_MAX_OUTPUT_PORT_TYPE
+greater <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+less <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+

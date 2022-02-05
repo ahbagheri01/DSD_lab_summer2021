@@ -1,0 +1,9 @@
+push = x
+pop = x
+RstN = x
+Full = StX
+Error = StX
+Empty = StX
+Data_Out = xxxx
+Data_In = xxxx
+Clk = x

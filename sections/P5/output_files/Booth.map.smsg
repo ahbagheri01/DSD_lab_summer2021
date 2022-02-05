@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at TestBench.v(60): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at CU.v(19): object "load" differs only in case from object "LOAD" in the same scope

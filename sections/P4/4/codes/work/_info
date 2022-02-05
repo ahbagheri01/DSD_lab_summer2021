@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\summer\DSD_lab
+vstack
+Z1 !s100 4PJUAC3U4VOg0Y07U91Q]0
+Z2 I3LN5J=VPWcbe`K5]elB<Q1
+Z3 VH_SVjT=eL?Nd^TUUhD_o=0
+Z4 dD:\summer\DSD_lab_summer2021\sections\4\codes
+Z5 w1628876139
+Z6 8D:/summer/DSD_lab_summer2021/sections/4/codes/stack.v
+Z7 FD:/summer/DSD_lab_summer2021/sections/4/codes/stack.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|D:/summer/DSD_lab_summer2021/sections/4/codes/stack.v|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1628880874.647000
+Z12 !s107 D:/summer/DSD_lab_summer2021/sections/4/codes/stack.v|
+!s101 -O0
+vstack_tb
+!i10b 1
+Z13 !s100 :Zjo<_TRC10JJ4OGUAaCL2
+Z14 IOVLe5j[Rbdl?ThBOTGLc@2
+Z15 VUcT2MGM1WF^M4NBENZaPk2
+R4
+Z16 w1628876759
+Z17 8D:/summer/DSD_lab_summer2021/sections/4/codes/stack_tb.v
+Z18 FD:/summer/DSD_lab_summer2021/sections/4/codes/stack_tb.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1628880874.727000
+!s107 D:/summer/DSD_lab_summer2021/sections/4/codes/stack_tb.v|
+Z19 !s90 -reportprogress|300|-work|work|D:/summer/DSD_lab_summer2021/sections/4/codes/stack_tb.v|
+!s101 -O0
+R10

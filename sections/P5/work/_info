@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\QUARTUS
+vBooth
+Z1 !s100 LNeY?QgmU6EF`2C<2`U?E0
+Z2 IIkIm9Y`C44Oz1W`4c`zV^3
+Z3 V?W6Anzn?C@GR6:XQ4@3JU0
+Z4 dC:\Users\Zomorrod\Desktop\5thOne
+Z5 w1629480853
+Z6 8C:\Users\Zomorrod\Desktop\5thOne\Booth.v
+Z7 FC:\Users\Zomorrod\Desktop\5thOne\Booth.v
+L0 3
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:\Users\Zomorrod\Desktop\5thOne\Booth.v|
+Z10 o-work work -O0
+Z11 n@booth
+Z12 !s108 1629482642.732000
+Z13 !s107 C:\Users\Zomorrod\Desktop\5thOne\Booth.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCU
+Z14 I4iWBjK9Z01K0S8JzCKHSh3
+Z15 V42TD4aEWd2F>cVPzEa4<[3
+R4
+Z16 w1629482397
+Z17 8C:/Users/Zomorrod/Desktop/5thOne/CU.v
+Z18 FC:/Users/Zomorrod/Desktop/5thOne/CU.v
+L0 3
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/5thOne/CU.v|
+R10
+n@c@u
+Z20 !s100 3>GeoHUj?;J4HF?0Q]eNl2
+Z21 !s108 1629482639.350000
+Z22 !s107 C:/Users/Zomorrod/Desktop/5thOne/CU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDataPath
+Z23 IY4mY02Y8jL5HMCYaTmJOQ3
+Z24 VzQ^>X[imEZfJjWH>k]4O90
+R4
+Z25 w1629482315
+Z26 8C:/Users/Zomorrod/Desktop/5thOne/DataPath.v
+Z27 FC:/Users/Zomorrod/Desktop/5thOne/DataPath.v
+L0 3
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/5thOne/DataPath.v|
+R10
+Z29 n@data@path
+Z30 !s100 Qd^19O=ITRl1T>gQgM:>>2
+Z31 !s108 1629482634.351000
+Z32 !s107 C:/Users/Zomorrod/Desktop/5thOne/DataPath.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestBench
+!i10b 1
+!s100 6O4o?R]S_PVR8k85<Qe[d3
+IV@?6^nenagKTQRkEofeOW1
+Z33 VIleNBaLWnb<O]<?E8]beJ2
+R4
+w1629483403
+Z34 8C:/Users/Zomorrod/Desktop/5thOne/TestBench.v
+Z35 FC:/Users/Zomorrod/Desktop/5thOne/TestBench.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1629483412.061000
+!s107 C:/Users/Zomorrod/Desktop/5thOne/TestBench.v|
+Z36 !s90 -reportprogress|300|-work|work|C:/Users/Zomorrod/Desktop/5thOne/TestBench.v|
+!s101 -O0
+R10
+Z37 n@test@bench

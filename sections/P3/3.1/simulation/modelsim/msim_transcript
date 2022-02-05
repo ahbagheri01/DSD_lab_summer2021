@@ -1,0 +1,19 @@
+# Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl 
+# do onebit_comparator_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\QUARTUS\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\QUARTUS\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1 {C:/Users/Zomorrod/Desktop/DSD-ThirdOne/3.1/onebit_comparator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module onebit_comparator
+# 
+# Top level modules:
+# 	onebit_comparator
+# 
